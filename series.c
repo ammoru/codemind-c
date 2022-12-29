@@ -1,22 +1,17 @@
 #include<stdio.h>
-#include<math.h>
-int main() 
+int main()
 {
-    int n,i,k1=0,k2=0,a,b;
+    int n,i,k1=1,k2=2;
     scanf("%d",&n);
-    printf("0 ");
-    for(i=0;i<(n-1);i++)
-     {
-         if(i%2==0)
-         {
-             a=pow(3,k1);
-             printf("%d ",a);
-             k1++;
-         }else
-         {
-             b=pow(2,k2);
-             printf("%d ",b);
-             k2++;
-         }
-     }
+    for(i=1;i<=n+1;i++)
+    {
+        if(i%2!=0)
+        {
+            printf("%d ",k1);
+            k1=(k1*2)+1;
+        }else
+        {
+        printf("%d ",k2);
+        k2=(k2*3)+2;
+    }}
 }
