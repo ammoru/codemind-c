@@ -1,17 +1,9 @@
-#include<stdio.h>
-#include<stdio.h>
-int main()
-{
-    int n,rem,lag=0;
-    scanf("%d",&n);
-    while(n>0)
-    {
-        rem=n%10;
-            if(lag<rem)
-         { 
-             lag=rem;
-        }
-        n=n/10;
-    }
-    printf("%d",lag);
-}
+#include <stdio.h>
+int main() 
+{int num, large = 0, rem = 0;
+scanf("%d", &num);
+while (num > 0) 
+{rem = num % 10;if (rem > large)
+{large = rem;}num = num / 10;}
+printf( "%d
+", large);return 0;}
