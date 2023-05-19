@@ -1,25 +1,30 @@
 #include<stdio.h>
 int main()
 {
-    int i,a=0,b=1,n,c,cnt=0;
-    scanf("%d",&n);
-    for(i=0;i<=n;i++)
+    int z;
+    scanf("%d",&z);
+    int y[100],i;
+    int a=0,b=1,d=0,c=0;
+    for(i=0;i<100;i++)
     {
         c=a+b;
-        if(c==n)
-        {
-            cnt++;
-            break;
-        }
+        y[i]=a;
         a=b;
         b=c;
     }
-    if(c==n)
+    for(i=0;i<100;i++)
     {
-    printf("True");
+        if(z==y[i])
+        {
+            d++;
+        }
+    }
+    if(d>=1)
+    {
+        printf("True");
     }
     else
     {
-    printf("False");
+        printf("False");
     }
 }
